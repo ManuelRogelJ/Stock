@@ -24,6 +24,9 @@ public class Main {
 	Producto producto_main4 = new Producto();
 	Producto producto_main5 = new Producto();
 	
+	Producto[] products = new Producto[1];
+	products[0] = new Producto("Product 1", 30, 0, 0);
+
 	// Atributos
 	String Nombre;
 	String Apellido;
@@ -200,10 +203,10 @@ public class Main {
 		System.out.println(
 				"\nDatos del Cliente 3: \nTelefono: " + cliente3.getTelefono() + "\nNombre: " + cliente3.getNombre());
 		// Sysout de los 5 productos que ha creado el cliente
-		System.out.println(
-				"\nPrimer producto: " + producto_main1.getNombre() + "\nSegundo producto: " + producto_main2.getNombre()
-						+ "\nTercer producto: " + producto_main3.getNombre() + "\nCuarto producto: "
-						+ producto_main4.getNombre() + "\nQuinto producto: " + producto_main5.getNombre());
+
+		System.out.println("Product name: " + products[0].getNombre());
+		System.out.println("Stock: " + products[0].getStock());
+
 		break;
 	
 

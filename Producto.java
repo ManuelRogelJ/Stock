@@ -7,15 +7,17 @@ public class Producto {
 	double precio;
 	int cantidad;
 	String prod;
+	int stock;
 
 	public Producto() {
 	}
 
 	// Constructor
-	public Producto(String nombre, double precio, int cantidad) {
+	public Producto(String nombre, double precio, int cantidad, int stock) {
 		this.nombre = nombre.toUpperCase();
 		this.precio = precio;
 		this.cantidad = cantidad;
+		this.stock = stock;
 	}
 
 	// Métodos Getters and Setters
@@ -49,6 +51,14 @@ public class Producto {
 
 	public void setProd(String prod) {
 		this.prod = prod;
+	}
+
+	public int getStock() {
+		return stock;
+	}
+
+	public void setStock(int stock) {
+		this.stock = stock;
 	}
 
 }
